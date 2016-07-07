@@ -101,6 +101,9 @@
 		18989EC61D2E3C910043EE63 /* SHWeather */ = {
 			isa = PBXGroup;
 			children = (
+				18989EFE1D2E59A90043EE63 /* Network */,
+				18989EFD1D2E583A0043EE63 /* Model */,
+				18989EFC1D2E55220043EE63 /* Img */,
 				18989ECA1D2E3C910043EE63 /* AppDelegate.h */,
 				18989ECB1D2E3C910043EE63 /* AppDelegate.m */,
 				18989ECD1D2E3C910043EE63 /* ViewController.h */,
@@ -138,6 +141,27 @@
 				18989EEE1D2E3C910043EE63 /* Info.plist */,
 			);
 			path = SHWeatherUITests;
+			sourceTree = "<group>";
+		};
+		18989EFC1D2E55220043EE63 /* Img */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Img;
+			sourceTree = "<group>";
+		};
+		18989EFD1D2E583A0043EE63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		18989EFE1D2E59A90043EE63 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,6 +520,7 @@
 				18989EF31D2E3C910043EE63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18989EF41D2E3C910043EE63 /* Build configuration list for PBXNativeTarget "SHWeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +529,7 @@
 				18989EF61D2E3C910043EE63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18989EF71D2E3C910043EE63 /* Build configuration list for PBXNativeTarget "SHWeatherUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +538,7 @@
 				18989EF91D2E3C910043EE63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
