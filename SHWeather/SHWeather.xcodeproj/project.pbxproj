@@ -15,6 +15,7 @@
 		18989ED71D2E3C910043EE63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18989ED51D2E3C910043EE63 /* LaunchScreen.storyboard */; };
 		18989EE21D2E3C910043EE63 /* SHWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18989EE11D2E3C910043EE63 /* SHWeatherTests.m */; };
 		18989EED1D2E3C910043EE63 /* SHWeatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18989EEC1D2E3C910043EE63 /* SHWeatherUITests.m */; };
+		18E0E8331D323E7100A08093 /* WeatherFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0E8321D323E7100A08093 /* WeatherFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		18989EE81D2E3C910043EE63 /* SHWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18989EEC1D2E3C910043EE63 /* SHWeatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHWeatherUITests.m; sourceTree = "<group>"; };
 		18989EEE1D2E3C910043EE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E0E8311D323E7100A08093 /* WeatherFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherFetcher.h; sourceTree = "<group>"; };
+		18E0E8321D323E7100A08093 /* WeatherFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,7 @@
 		18989EFD1D2E583A0043EE63 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18DF12041D2F80D100CEC269 /* Test */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -160,8 +164,17 @@
 		18989EFE1D2E59A90043EE63 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				18E0E8311D323E7100A08093 /* WeatherFetcher.h */,
+				18E0E8321D323E7100A08093 /* WeatherFetcher.m */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		18DF12041D2F80D100CEC269 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E0E8331D323E7100A08093 /* WeatherFetcher.m in Sources */,
 				18989ECF1D2E3C910043EE63 /* ViewController.m in Sources */,
 				18989ECC1D2E3C910043EE63 /* AppDelegate.m in Sources */,
 				18989EC91D2E3C910043EE63 /* main.m in Sources */,

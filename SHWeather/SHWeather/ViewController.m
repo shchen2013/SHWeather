@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "WeatherFetcher.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [WeatherFetcher FetchWeatherByGeocode:29 :110];
+
+    
+    
+    
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
