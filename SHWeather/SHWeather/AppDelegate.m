@@ -14,6 +14,11 @@
 
 @implementation AppDelegate
 
+-(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    
+    //NSLog(@"告诉代理app启动但还未启动状态保存");
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
