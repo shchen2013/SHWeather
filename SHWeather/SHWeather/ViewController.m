@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [WeatherFetcher FetchWeatherByGeocode:29 :110];
+    __block NSData * data;
+    [WeatherFetcher FetchDailyWeatherByCityName:@"ShangHai" finish:^(NSData *data1) {
+        data = data1;
+        NSLog(@"%@", [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil]);
+        //NSLog(@"%@，%@", data, data1);
+        //NSLog(@"data = %@", [NSJSONSerialization dataWithJSONObject:data1 options:kNilOptions error:nil]);
+    }];
 
     
     

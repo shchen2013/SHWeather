@@ -10,9 +10,16 @@
 
 @interface WeatherFetcher : NSObject
 /**
- 采用苹果自带天气Api,通过地理编码(经纬度)来获取
- @param longitude longitude 东经北纬为正数
+ 采用openweathermap天气Api,通过城市名称来获取,获取从当前时间到未来24小时每隔三小时的天气信息
+ @param cityName 城市名称
  @return
  */
-+ (void)FetchWeatherByGeocode:(double)longitude:(double)longitude;
++ (void)FetchDailyWeatherByCityName:(NSString *)cityName finish:(void (^) (NSData *data))finish;
+/**
+ 获取未来7天的天气信息
+ @param cityName 城市名称
+ @return
+ */
++ (void)FetchForecastWeatherByCityName:(NSString*)cityName finish:(void (^) (NSData *data))finish;
+
 @end
